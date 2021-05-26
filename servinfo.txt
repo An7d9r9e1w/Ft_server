@@ -1,0 +1,46 @@
+https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F	-	containers (OS-level virtualization)
+
+https://habr.com/ru/company/southbridge/blog/530226/	-	containers and kubernetes
+
+https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md		-	docker tutorial for beginners
+
+https://wordpress.org/support/article/how-to-install-wordpress/		-	installing wordpress
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10		-	installing all stuff
+
+https://github.com/alexandregv/42toolbox	-	scripts 42
+
+
+php:
+---
+php
+php-fpm
+php-mysql
+php-common
+php-cli
+php-json
+php-opcache
+php-readline
+php-mbstring
+php-xml
+php-gd
+php-curl
+php-xmlrpc
+php-soap
+php-intl
+php-zip
+
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
+-subj "/C=US/ST=Oregon/L=Portland/O=Company Name/OU=Org/CN=www.example.com"
+
+openssl genrsa -out rootCA.key 2048
+openssl req -x509 -new -key rootCA.key -days 10000 -out rootCA.crt
+
+
+
+CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+GRANT ALL ON wordpress.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password';
+
+FLUSH PRIVILEGES;
+
